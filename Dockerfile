@@ -1,4 +1,4 @@
-FROM golang:1.10-alpine as geth-builder
+FROM golang:1.10-alpine3.8 as geth-builder
 
 ## install necessary package
 RUN apk add --no-cache make gcc musl-dev linux-headers git
